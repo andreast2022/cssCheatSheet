@@ -1,0 +1,170 @@
+/* start by choosing a selector to target, then an opening { then choose the property(background-color) and the value(yellow) then ; and a closing } This targets all <h1> tags  */
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: green;
+}
+a:visited {
+    /* color: green; */
+    /* commented out beceause it makes the buttons hard to read */
+}
+h1 {
+    /* background-color: yellow; */
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #555555;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    /* this is the same as above but shortens the code to be all on one line */
+    font: normal 16px Arial, Helvrtica, sans-serif;
+
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    /* this will make the page responsive */
+    margin: auto;
+}
+.button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+.button:hover {
+    background: red;
+    color: white;
+}
+.clr {
+    clear: both;
+    /* this div will clear any floats above it */
+}
+.box-1 {
+    background-color: #333;
+    color: #fff;
+    border-width: 3px;
+    border-bottom-width: 10px;
+    border-top-style: dotted;
+    /* same as above */
+    border: 5px red solid;
+    padding: 20px;
+    margin-top: 20px 0;
+
+}
+
+.box-1 h1 {
+    font-family: Tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+    /* these are examples of text formatting styles */
+}
+
+.box-2 {
+    border: 3px;
+    padding: 20px;
+    margin: 20px 0;
+}
+.categories {
+    border: 1px lightgray solid;
+    padding: 10px;
+    border-radius: 15px;
+}
+.categories h2 {
+    text-align: center;
+}
+.categories ul {
+    padding: 0;
+    padding-left: 20px;
+    list-style: square;
+}
+.categories li {
+    padding-bottom: 6px;
+    border-bottom: 1px dotted #333;
+    list-style-image: url('../images/check.png');
+}
+.my-form {
+    padding: 20px;
+}
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+.my-form label {
+    display: block;
+}
+.my-form input[type="text"], .my-form textarea {
+    padding: 8px;
+    width: 100%;
+}
+.block {
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#main-block {
+    float: left;
+    width: 70%;
+}
+#sidebar {
+    float: right;
+    width: 30%;
+    background-color: darkgray;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.p-box {
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image: url('../images/bg-image.jpeg');
+    background-repeat: no-repeat;
+    background-position: 100px 200px;
+    background-position: center center;
+
+}
+.p-box h1 {
+    top: 100px;
+    left: 200px;
+    position: absolute;
+}
+.p-box h2 {
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+.fix-me {
+    position: fixed;
+    top: 400px;
+}
+.my-list li:first-child{
+    background: red;
+}
+.my-list li:last-child{
+    background: blue;
+}
+.my-list li:nth-child(5){
+    background: yellow;
+}
+.my-list li:nth-child(even){
+    background: grey;
+}
+
